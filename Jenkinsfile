@@ -18,7 +18,8 @@ pipeline {
                     sh 'mvn test'
                 }
             }
-        }stage ('Verifying Stage') {
+        }
+        stage ('Verifying Stage') {
 
             steps {
                 withMaven(maven : 'Loca_Maven') {
